@@ -1,4 +1,4 @@
-import React, { RefObject, ForwardedRef } from "react";
+import React, { RefObject } from "react";
 
 interface PortfolioProps {
   className?: string;
@@ -17,5 +17,7 @@ const Portfolio = React.forwardRef<HTMLDivElement, PortfolioProps>(
     );
   }
 );
+
+Portfolio.displayName = "Portfolio";
 
 export default Portfolio;

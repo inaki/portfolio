@@ -18,4 +18,6 @@ const About = React.forwardRef<HTMLDivElement, AboutProps>(
   }
 );
 
+About.displayName = "About";
+
 export default About;

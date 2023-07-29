@@ -18,4 +18,6 @@ const Contact = React.forwardRef<HTMLDivElement, ContactProps>(
   }
 );
 
+Contact.displayName = "Contact";
+
 export default Contact;
