@@ -6,7 +6,7 @@ import Header from "@/components/header";
 import Home from "@/components/home";
 import Portfolio from "@/components/portfolio";
 import Image from "next/image";
-import { useRef } from "react";
+import { use, useEffect, useRef } from "react";
 
 export default function Start() {
   const home = useRef<HTMLDivElement>(null);
@@ -20,6 +20,10 @@ export default function Start() {
       behavior: "smooth",
     });
   };
+
+  useEffect(() => {
+    scrollToSection(home);
+  }, []);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

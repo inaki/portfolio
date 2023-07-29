@@ -1,4 +1,4 @@
-import React, { RefObject, ForwardedRef } from "react";
+import React, { RefObject } from "react";
 
 interface HomeProps {
   className?: string;

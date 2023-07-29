@@ -1,8 +1,8 @@
-import React, { RefObject, ForwardedRef } from "react";
+import React, { RefObject } from "react";
 
 interface AboutProps {
   className?: string;
-  aboutRef: RefObject<HTMLDivElement>; // Changed HTMLElement to HTMLDivElement
+  aboutRef: RefObject<HTMLDivElement>;
 }
 
 const About = React.forwardRef<HTMLDivElement, AboutProps>(

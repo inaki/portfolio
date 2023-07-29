@@ -2,7 +2,7 @@ import React, { RefObject } from "react";
 
 interface PortfolioProps {
   className?: string;
-  portfolioRef: RefObject<HTMLDivElement>; // Changed HTMLElement to HTMLDivElement
+  portfolioRef: RefObject<HTMLDivElement>;
 }
 
 const Portfolio = React.forwardRef<HTMLDivElement, PortfolioProps>(
